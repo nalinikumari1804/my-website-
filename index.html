@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=<div>, initial-scale=1.0">
+        <title>My Website</title>
+    </head>
+    <style>
+        body{
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background-image:url("nal web/user.jpg");
+            background-repeat: no-repeat;
+            background-position:right 80px ; 
+            font-family: 'Baloo 2', cursive;
+        }
+
+        .left{
+            display: inline-block;
+            /* border: 2px solid rgb(224, 28, 28); */
+            position: absolute;
+            /* top: 12px; */
+            left:10px;
+            padding: 4px;
+        }
+        .mid{
+            display: block;
+            width: 33%;
+            margin: auto;
+            border: 2px solid black;
+        }
+        .right{
+            position: absolute;
+            right: 30px;
+            top: 12px;
+            /* border: 2px solid rgb(228, 23, 23); */
+            display: inline-block;
+            padding: 4px;
+        }
+        .navbar{
+        background-color: black;
+        margin-top: 0px;
+        font-size: larger;
+        position: sticky;
+        top: 0px;
+        }
+        .navbar li{
+        display: inline-block;
+        
+        }
+        .navbar li a{
+            color: rgb(252, 243, 243);
+            text-decoration: none;
+            padding: 15px;
+        }
+        .navbar li a:hover,.navbar li a.active{
+            color: rgb(241, 190, 165);
+            text-decoration: underline;
+        }
+        .left img{
+            width:150px;
+            filter: invert(100%);
+        }
+        .btn{
+            cursor: pointer;
+            font-family: 'Baloo 2', cursive;
+
+        }
+        .container{
+            color: rgb(83, 55, 42);
+            border: 3px solid rgb(177, 119, 65);
+            border-radius: 8px;
+            margin: 80px 60px;
+            padding: 30px;
+            width: 33%;
+            display: block;
+            text-align: center;
+        }
+        /* .container:hover{
+            color: aquamarine;
+        } */
+        .form-grp input{
+            text-align: center;
+            display: block;
+            width: 96%;
+            padding: 4px;
+            border: 2px solid rgb(233, 142, 126);
+            border-radius: 4px;
+            margin: 4px auto;
+        }
+        .form-grp input:hover{
+            border: 2px solid rgb(247, 40, 3);
+        }
+        .container .btn{
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            width: 100%;
+            border-radius: 4px;
+        }
+        .container .btn:hover{
+            color: rgb(92, 57, 57);
+        }
+
+</style>
+    <body>
+        <header class="navbar">
+            <div class="left">
+                <img src="nal web\wblogo.jpg" alt="img for logo">
+            </div>
+            <div class="mid">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <button class="btn">Contact</button>
+                <button class="btn">Email</button>
+
+
+            </div>
+
+        </header>
+        <div class="container">
+            <h4>Heya, I'm <br></h4>
+            <h2><b>Nalini</b></h2><hr>
+            <h3>Share your user experience here!</h3>
+            <form action="noaction.php">
+                <div class="form-grp">
+                    <input type="text" name="" placeholder="Enter your name">
+                </div>
+                <div class="form-grp">
+                    <input type="number" name="" placeholder="Enter your age">
+                </div>
+                <div class="form-grp">
+                    <input type="number" name="" placeholder="Enter your contact no.">
+                    <div class="form-grp">
+                        <input type="number" name="" placeholder="Enter your email">
+                    <div class="form-grp">
+                        <input type="text" name="" placeholder="Enter your locality">
+                    </div>
+                </div>
+                <div class="form-grp">
+                    <input type="text" name="" placeholder="Enter your experience">
+                </div>
+                <div class="form-grp">
+                    <input type="text" name="" placeholder="What modification you want?">
+                </div>
+                <button class="btn"><b>Submit</b></button>
+            </form>
+
+        </div>
+    </body>
+</html>
